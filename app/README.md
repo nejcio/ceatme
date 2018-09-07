@@ -15,6 +15,13 @@ Because I've spent about 6h on this app, there is a not fully finished "favourit
  
  Code compiling is done by [Vue CLI](https://cli.vuejs.org/). 
  
+ **Dataflow**
+  
+ From the service data is passed to the "local data store" - VueJs instance (reactive).
+ "Local data store" is a VueJS plugin which is available across the app.
+ 
+ The data is presented via "dummy" components.
+   
 # Requirements
 - Node.js 9+
 - NPM 5+
