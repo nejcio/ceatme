@@ -32,10 +32,11 @@ while(list.length < 11) {
     list[list.length] = randomNumber;
 }
 
-console.log('Sort result: ', insertionSort(list));
+console.log('List:', list);
+console.log('Sorted result: ', insertionSort(list));
 
 let start = process.hrtime();
 insertionSort(list);
 let end = process.hrtime(start);
 
-console.info('Running sorting algorithm 10 billion execution time: %dms', (Math.pow(10, 10) * (end[1]/ 1000000)));
+console.info('Sorting algorithm 10 billion times execution time: %dms', (Math.pow(10, 10) * (end[1]/ 1000000)));
